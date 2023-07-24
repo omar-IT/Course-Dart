@@ -18,8 +18,10 @@ void main() {
   }
 
   // * call
-  int result = subtraction(20, 10);
-  print('result = $result');
+  int result1 = subtraction(20, 10);
+  print('result1 = $result');
+  int result2 = subtraction(10, 20);
+  print('result2 = $result');
 }
 // * function with arguments
 void additions(int x, int y) {

@@ -9,7 +9,7 @@ void main() {
 
   // * call
   additions(5, 10);
-
+  additions(20, 30);
   // * return with arguments
 
   int subtraction(int x, int y) {

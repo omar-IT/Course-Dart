@@ -1,12 +1,15 @@
 void main() {
-  /// datatype namrmethod(){
+  /// datatype namrmethod(parameter){
   /// ...code
   /// }
-  /// call->namemethod();
+  /// call->namemethod(argument);
+  /// }
 
-  // function vs method
-
-
+  // * void with arguments
+  void additions (int x, int y){
+    int z = x + y;
+    print('sum = $z');
+  }
   // * call
   additions(5, 10);
   additions(20, 30);
@@ -19,9 +22,9 @@ void main() {
 
   // * call
   int result1 = subtraction(20, 10);
-  print('result1 = $result');
+  print('result1 = $result1');
   int result2 = subtraction(10, 20);
-  print('result2 = $result');
+  print('result2 = $result2');
 }
 // * function with arguments
 void additions(int x, int y) {

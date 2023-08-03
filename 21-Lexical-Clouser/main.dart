@@ -58,9 +58,29 @@ void main() {
   }
   //print(f3(10)(3));
 
-  Function f4(int x) {
+  int f4(int x) {
     x = 10;
     print('f1 befor f2 :x = $x');
+    int f3(int y) {
+      x *= y;
+      print('f2 : x = $x');
+      int f2(int z) {
+        x *= z;
+        return x;
+      }
+
+      return f2(3);
+    }
+
+    print('f1 after f2 : x = $x');
+    return f3(2);
+  }
+  print(f4(1));
+
+  
+  Function f5(int x) {  
+    x = 10;
+    print('f1 befor f2 :x = $x');                 
     Function f3(int y) {
       x *= y;
       print('f2 : x = $x');
@@ -69,17 +89,17 @@ void main() {
         return x;
       }
 
-      return f2;
+      return f2;    
     }
 
     print('f1 after f2 : x = $x');
-    return f3;
+    return f3;   
   }
-  //int r = f4(1)(2)(3);
+  //int r = f5(1)(2)(3);
   //print ('r : $r');
 
-  //Function r = f4(1);
+  //Function r = f5(1);
   //print(r(2)(3));
 
-  print('value : ${f4(1)(2)(3)}');
+  print('value : ${f5(1)(2)(3)}');
 }

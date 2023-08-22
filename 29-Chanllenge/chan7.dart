@@ -36,7 +36,7 @@ void main() {
   /// 45.444444.round() --> 45
 
   /// 45.66666.roundToDouble() ---> 46.0
-  /// 45.44444.round() --> 45.0
+  /// 45.44444.round() --> 45
 
   int finalAmountI = billPerPerson.round();
   print('Each person should pay: \$ $finalAmountI');

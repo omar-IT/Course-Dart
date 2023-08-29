@@ -15,8 +15,8 @@ String isPrimery(int number) {
   for (int i = 2; i <= number / i; i++) {
     ///i < number
     print('$i <= $number / $i  {${number / i}}');
-    num x = number / i;
-    if (x % i != 0) {
+    
+    if (number % i != 0) {
       continue;
     } else {
       return 'The number: $number is not a primery';
